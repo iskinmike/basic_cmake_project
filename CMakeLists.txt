@@ -24,8 +24,8 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 # add_library(${PROJECT_NAME} SHARED ${SOURCES})
 
 message(STATUS "base project CMAKE_CURRENT_BINARY_DIR:  ${CMAKE_CURRENT_BINARY_DIR}")
-message(STATUS "base project CMAKE_CURRENT_LIST_DIR:  ${CMAKE_CURRENT_BINARY_DIR}")
-
+message(STATUS "base project CMAKE_CURRENT_LIST_DIR:  ${CMAKE_CURRENT_LIST_DIR}")
+message(STATUS "base project CMAKE_CURRENT_SOURCE_DIR:  ${CMAKE_CURRENT_SOURCE_DIR}")
 
 target_include_directories ( ${PROJECT_NAME} BEFORE PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}/include
